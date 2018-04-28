@@ -9,7 +9,7 @@ unsigned long long g_total_param_size = 0;
 unsigned long long g_max_total_param_size = 0;
 
 
-#if (CUDART_VERSION >= 5000)
+#if ( >= 5000)
 #define __CUDA_RUNTIME_API_H__
 
 #include <builtin_types.h>

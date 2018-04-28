@@ -74,7 +74,7 @@
 #define __CUDA_RUNTIME_API_H__
 #include "host_defines.h"
 #include "builtin_types.h"
-#if (CUDART_VERSION < 8000)
+#if ( < 8000)
 #include "__cudaFatFormat.h"
 #endif
 #include "../src/abstract_hardware_model.h"

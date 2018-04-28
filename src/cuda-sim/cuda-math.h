@@ -74,7 +74,7 @@ namespace cuda_math {
 #define __attribute__(a) // to remove warnings inside math_functions.h
 #undef INT_MAX
 
-#if CUDART_VERSION < 3000
+#if  < 3000
 // DEVICE_BUILTIN
    struct int4 {
       int x, y, z, w;
@@ -321,7 +321,7 @@ float __internal_accurate_fdividef(float a, float b)
 float __saturatef(float a)
 {
    float b; 
-   if (std::isnan(a)) b = 0.0f; 
+   if (isnan(a)) b = 0.0f; 
    else if (a >= 1.0f) b = 1.0f;
    else if (a <= 0.0f) b = 0.0f; 
    else b = a; 
